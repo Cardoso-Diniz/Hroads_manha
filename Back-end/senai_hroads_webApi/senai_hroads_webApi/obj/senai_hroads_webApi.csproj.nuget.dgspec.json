@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS\\Api\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj": {}
+    "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS\\Api\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj": {
+    "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS\\Api\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
         "projectName": "senai_hroads_webApi",
-        "projectPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS\\Api\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+        "projectPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
         "packagesPath": "C:\\Users\\guica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS\\Api\\senai_hroads_webApi\\senai_hroads_webApi\\obj\\",
+        "outputPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guica\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
