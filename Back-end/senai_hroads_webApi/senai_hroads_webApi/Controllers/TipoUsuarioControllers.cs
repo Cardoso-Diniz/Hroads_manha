@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace senai_hroads_webApi.Interfaces
+namespace senai_hroads_webApi.Controllers
 {
-    public class IClasse_HabildiadeRepository
+    public class TipoUsuarioControllers
     {
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace senai_hroads_webApi.Controllers
 {
-    public class Classe_HabilidadeControllers
+    public class UsuarioControllers
     {
     }
 }

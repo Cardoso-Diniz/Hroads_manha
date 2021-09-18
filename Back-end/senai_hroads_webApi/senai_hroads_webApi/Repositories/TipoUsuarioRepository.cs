@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace senai_hroads_webApi.Repositories
 {
-    public class Classe_HabilidadeRepository
+    public class TipoUsuarioRepository
     {
     }
 }
