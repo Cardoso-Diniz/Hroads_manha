@@ -887,19 +887,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guica\\.nuget\\packages\\": {}
+    "C:\\Users\\dev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+      "projectUniqueName": "C:\\Users\\dev\\Desktop\\Hroads_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
       "projectName": "senai_hroads_webApi",
-      "projectPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
-      "packagesPath": "C:\\Users\\guica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\obj\\",
+      "projectPath": "C:\\Users\\dev\\Desktop\\Hroads_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\senai_hroads_webApi.csproj",
+      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dev\\Desktop\\Hroads_manha\\Back-end\\senai_hroads_webApi\\senai_hroads_webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\guica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -960,7 +960,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
