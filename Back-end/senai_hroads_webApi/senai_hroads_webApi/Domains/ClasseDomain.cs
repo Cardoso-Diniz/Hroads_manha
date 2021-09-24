@@ -9,5 +9,6 @@ namespace senai_hroads_webApi.Domains
     {
         public int idClasse { get; set; }
         public string nomeClasse { get; set; }
+        public object NomeClasse { get; internal set; }
     }
 }

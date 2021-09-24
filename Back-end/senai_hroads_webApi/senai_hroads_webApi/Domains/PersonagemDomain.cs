@@ -14,5 +14,10 @@ namespace senai_hroads_webApi.Domains
         public string capVida { get; set; }
         public DateTime dataAtt { get; set; }
         public DateTime dataCriacao { get; set; }
+        public object PersonagemPersonagem { get; internal set; }
+        public object DescricaoPersonagem { get; internal set; }
+        public object NomePersonagem { get; internal set; }
+        public int Mana { get; internal set; }
+        public object Vida { get; internal set; }
     }
 }

@@ -10,5 +10,6 @@ namespace senai_hroads_webApi.Domains
         public int idHabilidade { get; set; }
         public int idTipoHabilidade { get; set; }
         public string nomeHabilidade { get; set; }
+        public object DescricaoHabilidade { get; set; }
     }
 }
