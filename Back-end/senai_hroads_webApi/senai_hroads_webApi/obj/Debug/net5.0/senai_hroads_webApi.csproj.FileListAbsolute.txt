@@ -1,8 +1,0 @@
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.csproj.AssemblyReference.cache
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.AssemblyInfoInputs.cache
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.AssemblyInfo.cs
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.csproj.CoreCompileInputs.cache
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.RazorAssemblyInfo.cache
-C:\Users\guica\Desktop\SENAI 2\HROADS_manha\Back-end\senai_hroads_webApi\senai_hroads_webApi\obj\Debug\net5.0\senai_hroads_webApi.RazorAssemblyInfo.cs

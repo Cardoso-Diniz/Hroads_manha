@@ -83,8 +83,8 @@ GO
 
 SELECT nomeHabilidade 'Nome da habilidade', nomeClasse [Nome da classe]
 FROM Habilidade h
-FULL OUTER JOIN Classe c
+INNER JOIN Classe c
 on h.idHabilidade = h.idHabilidade
-FULL OUTER JOIN Personagem
+INNER JOIN Personagem
 ON c.idClasse = c.idClasse;
 GO
