@@ -1,4 +1,4 @@
-USE SENAI_HROADS_MANHA;
+USE hroads_senai;
 GO
 
 INSERT INTO Personagem(idClasse,nome,capVida,capMana,dataAtt,dataCriacao)

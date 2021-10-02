@@ -1,4 +1,4 @@
-USE SENAI_HROADS_MANHA;
+USE hroads_senai;
 GO
 
 --6. Selecionar todos os personagens
