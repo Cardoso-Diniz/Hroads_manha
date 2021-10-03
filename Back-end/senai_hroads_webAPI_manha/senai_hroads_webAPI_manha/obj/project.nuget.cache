@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IbFZJFcGaQlXtCHlz4b74Ip2Wty56pXfdVgCyaWXTh7uyGMGNZU2bAOXyzFroZqs8l5MMa4sOYQPGX8Nm8YUyg==",
+  "dgSpecHash": "/b89LQICQgJkBmHNcJYzV6vlD11fkqVGoYwNsAPcpZgogyAEzWT6bR5ANDZjnMoTkJ8ZptfMbC9ghDZRfk/YQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guica\\Desktop\\SENAI 2\\HROADS_manha\\Back-end\\senai_hroads_webAPI_manha\\senai_hroads_webAPI_manha\\senai_hroads_webAPI_manha.csproj",
+  "projectFilePath": "C:\\Users\\guica\\Desktop\\SENAI 2\\Hroads_manha\\Back-end\\senai_hroads_webAPI_manha\\senai_hroads_webAPI_manha\\senai_hroads_webAPI_manha.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guica\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\guica\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",

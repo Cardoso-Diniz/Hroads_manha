@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace senai_hroads_webAPI_manha.Controllers
 {
     [Produces(" application / json ")]
-    [Route(" api / [controlador] ")]
+    [Route("api/[controller]")]
     [ApiController]
 
     public class TipoHabilidadeController : ControllerBase

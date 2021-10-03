@@ -29,7 +29,7 @@ namespace senai_hroads_webAPI_manha
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "hroads_manha.webApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "hroads.webApi", Version = "v1" });
 
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -60,16 +60,16 @@ namespace senai_hroads_webAPI_manha
                         ValidateLifetime = true,
 
                         // Forma de criptografia e ainda valida a chave de autenticação
-                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("hroads_manha-chave-autenticacao")),
+                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("hroads-chave-autenticacao")),
 
                         // Valida o tempo de expiração do token
                         ClockSkew = TimeSpan.FromMinutes(30),
 
                         // Nome do issuer, de onde está vindo
-                        ValidIssuer = "hroads_manha.webAPI",
+                        ValidIssuer = "hroads.webAPI_manha",
 
                         // Nome do audience, para onde está indo
-                        ValidAudience = "hroads_manha.webAPI"
+                        ValidAudience = "hroads.webAPI_manha"
                     };
                 });
         }
@@ -89,7 +89,7 @@ namespace senai_hroads_webAPI_manha
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "hroads_manha.webAPI");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "hroads.webAPI_manha");
                 c.RoutePrefix = string.Empty;
             });
 
