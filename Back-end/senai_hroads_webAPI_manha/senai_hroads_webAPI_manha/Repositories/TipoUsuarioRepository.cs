@@ -11,15 +11,13 @@ namespace senai_hroads_webAPI_manha.Repositories
     public class TipoUsuarioRepository : ITipoUsuarioRepository
     {
         HroadsContext ctx = new HroadsContext();
-        public void AtualizarIdUrl(int idTipoUsuario, TipoUsuario TipoUsuarioAtualizada)
+        public void AtualizarIdUrl(int idTipoUsuario, TipoUsuario TipoUsuarioAtualizado)
         {
             TipoUsuario TipoUsuarioBuscada = ctx.TipoUsuarios.Find(idTipoUsuario);
 
-            if (TipoUsuarioAtualizada.IdUsuario != null && TipoUsuarioAtualizada.Titulo != null)
+            if (TipoUsuarioAtualizado.Titulo != null)
             {
-
-                TipoUsuarioBuscada.IdUsuario = TipoUsuarioAtualizada.IdUsuario;
-                TipoUsuarioBuscada.Titulo = TipoUsuarioAtualizada.Titulo;
+                TipoUsuarioBuscada.Titulo = TipoUsuarioAtualizado.Titulo;
             }
 
             ctx.TipoUsuarios.Update(TipoUsuarioBuscada);

@@ -1,0 +1,826 @@
+{
+	"info": {
+		"_postman_id": "8863fa8b-9a6a-44d2-9de2-a523b225e01b",
+		"name": "HROADS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classe",
+			"item": [
+				{
+					"name": "Classe Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Classe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Classe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Classe BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Classe/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Classe",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Classe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nomeClasse\": \"string\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Classe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Classe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Classe Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"nomeClasse\": \"Teste update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Classe/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Classe",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Classe Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Classe/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Classe",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Habilidade",
+			"item": [
+				{
+					"name": "Habilidade ListarTudo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Habilidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Habilidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Habilidade BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Habilidade/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Habilidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Habilidade Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idTipoHabilidade\": 1,\r\n        \"nomeHabilidade\": \"Fome Mortal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Habilidade/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Habilidade",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Habilidade Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTipoHabilidade\": 4,\r\n        \"nomeHabilidade\": \"Sono Mortal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Habilidade/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Habilidade",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Habilidade Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Habilidade/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Habilidade",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personagem",
+			"item": [
+				{
+					"name": "Personagem ListarTudo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Personagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Personagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personagem BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Personagem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Personagem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personagem Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idClasse\": 2,\r\n        \"nome\": \"Ricardo teste\",\r\n        \"capMana\": 20,\r\n        \"capVida\": 50,\r\n        \"dataAtt\": \"2021-09-19T00:00:00\",\r\n        \"dataCriacao\": \"2019-01-20T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Personagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Personagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personagem Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idClasse\": 2,\r\n        \"nome\": \"Teste Cardoso\",\r\n        \"capMana\": 30,\r\n        \"capVida\": 40,\r\n        \"dataAtt\": \"2021-09-22T00:00:00\",\r\n        \"dataCriacao\": \"2019-01-25T00:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Personagem/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Personagem",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personagem Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Personagem/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Personagem",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipoHabilidade",
+			"item": [
+				{
+					"name": "TipoHabilidade Listar Tudo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoHabilidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoHabilidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoHabilidade BuscarPorID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoHabilidade/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoHabilidade",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoHabilidade Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeTipoHabilidade\": \"Cansaço\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/TipoHabilidade/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoHabilidade",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoHabilidade Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeTipoHabilidade\": \"Descanço\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/TipoHabilidade/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoHabilidade",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoHAbilidade Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoHabilidade/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoHabilidade",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipoUsuario",
+			"item": [
+				{
+					"name": "TipoUsuario ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoUsuario BoscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoUsuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoUsuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoUsuario Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/TipoUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoUsuario Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"Teste3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/TipoUsuario/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoUsuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipoUsuario Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TipoUsuario/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TipoUsuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuario ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idTipoUsuario\": 1,\r\n        \"nomeJogador\": \"Teste\",\r\n        \"email\": \"Teste\",\r\n        \"senha\": \"Teste1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idTipoUsuario\": 1,\r\n        \"nomeJogador\": \"Teste\",\r\n        \"email\": \"Teste\",\r\n        \"senha\": \"Teste1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login Token USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"cardoso@gmail.com\",\r\n  \"senha\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Token ADM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emai\":\"saulo@gmail.com\",\r\n    \"senha\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

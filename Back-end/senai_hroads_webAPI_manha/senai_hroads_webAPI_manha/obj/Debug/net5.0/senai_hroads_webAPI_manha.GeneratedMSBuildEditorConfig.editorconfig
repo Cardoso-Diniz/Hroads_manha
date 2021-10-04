@@ -6,5 +6,3 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = senai_hroads_webAPI_manha
-build_property.ProjectDir = C:\Users\Ricardo\Desktop\SENAI\Hroads_manha\Back-end\senai_hroads_webAPI_manha\senai_hroads_webAPI_manha\

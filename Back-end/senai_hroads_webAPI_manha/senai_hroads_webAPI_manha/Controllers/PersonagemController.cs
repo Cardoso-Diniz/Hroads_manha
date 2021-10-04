@@ -29,7 +29,7 @@ namespace senai_hroads_webAPI_manha.Controllers
             return Ok(_personagemRepository.Listar());
         }
 
-        [HttpGet(" {idPersonagem} ")]
+        [HttpGet("{idPersonagem}")]
         public IActionResult BuscarPorId(int idPersonagem)
         {
             return Ok(_personagemRepository.BuscarPorId(idPersonagem));
@@ -43,14 +43,14 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(201);
         }
 
-        [HttpPut(" {idPersonagem} ")]
+        [HttpPut("{idPersonagem}")]
         public IActionResult AtualizarIdUrl(int idPersonagem, Personagem PersonagemAtualizada)
         {
             _personagemRepository.AtualizarIdUrl(idPersonagem, PersonagemAtualizada);
             return StatusCode(204);
         }
 
-        [HttpDelete(" {idPersonagem} ")]
+        [HttpDelete("{idPersonagem}")]
         public IActionResult Deletar(int idPersonagem)
         {
             _personagemRepository.Deletar(idPersonagem);

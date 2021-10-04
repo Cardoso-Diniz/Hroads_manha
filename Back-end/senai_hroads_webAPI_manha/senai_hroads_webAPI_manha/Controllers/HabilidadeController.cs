@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace senai_hroads_webAPI_manha.Controllers
 {
-    [Produces(" application / json ")]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
 
@@ -29,7 +29,7 @@ namespace senai_hroads_webAPI_manha.Controllers
             return Ok(_habilidadeRepository.Listar());
         }
 
-        [HttpGet(" {idHabilidade} ")]
+        [HttpGet("{idHabilidade}")]
         public IActionResult BuscarPorId(int idHabilidade)
         {
             return Ok(_habilidadeRepository.BuscarPorId(idHabilidade));
@@ -43,14 +43,14 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(201);
         }
 
-        [HttpPut(" {idHabilidade} ")]
+        [HttpPut("{idHabilidade}")]
         public IActionResult AtualizarIdUrl(int idHabilidade, Habilidade HabilidadeAtualizada)
         {
             _habilidadeRepository.AtualizarIdUrl(idHabilidade, HabilidadeAtualizada);
             return StatusCode(204);
         }
 
-        [HttpDelete(" {idHabilidade} ")]
+        [HttpDelete("{idHabilidade}")]
         public IActionResult Deletar(int idHabilidade)
         {
             _habilidadeRepository.Deletar(idHabilidade);
