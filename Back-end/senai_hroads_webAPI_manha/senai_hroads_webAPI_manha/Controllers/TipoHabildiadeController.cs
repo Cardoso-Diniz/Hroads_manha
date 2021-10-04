@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace senai_hroads_webAPI_manha.Controllers
 {
-    [Produces(" application / json ")]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
 

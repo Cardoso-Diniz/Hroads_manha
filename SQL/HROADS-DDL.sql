@@ -34,18 +34,18 @@ CREATE TABLE Habilidade(
 );
 GO
 
-CREATE TABLE Usuario(
-idUsuario INT PRIMARY KEY IDENTITY,
-nomeJogador VARCHAR(200),
-email VARCHAR(200),
-senha VARCHAR(200)
+CREATE TABLE TipoUsuario(
+idTipoUsuario INT PRIMARY KEY IDENTITY,
+titulo VARCHAR(200)
 );
 GO
 
-CREATE TABLE TipoUsuario(
-idTipoUsuario INT PRIMARY KEY IDENTITY,
-idUsuario INT FOREIGN KEY REFERENCES Usuario(idUsuario),
-titulo VARCHAR(200)
+CREATE TABLE Usuario(
+idUsuario INT PRIMARY KEY IDENTITY,
+idTipoUsuario INT FOREIGN KEY REFERENCES TipoUsuario(idTipoUsuario),
+nomeJogador VARCHAR(200),
+email VARCHAR(200),
+senha VARCHAR(200)
 );
 GO
 
