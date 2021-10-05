@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_hroads_webAPI_manha.Domains;
 using senai_hroads_webAPI_manha.Interfaces;
@@ -24,10 +25,12 @@ namespace senai_hroads_webAPI_manha.Controllers
         }
 
         [HttpGet]
-        public IActionResult Listar()
+        public IActionResult Listar(int id)
         {
-            return Ok(_habilidadeRepository.Listar());
+            return Ok(_habilidadeRepository.Listar(id));
         }
+
+
 
         [HttpGet("{idHabilidade}")]
         public IActionResult BuscarPorId(int idHabilidade)
@@ -35,6 +38,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return Ok(_habilidadeRepository.BuscarPorId(idHabilidade));
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPost]
         public IActionResult Cadastrar(Habilidade novaHabilidade)
         {
@@ -43,6 +49,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(201);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPut("{idHabilidade}")]
         public IActionResult AtualizarIdUrl(int idHabilidade, Habilidade HabilidadeAtualizada)
         {
@@ -50,6 +59,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(204);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpDelete("{idHabilidade}")]
         public IActionResult Deletar(int idHabilidade)
         {

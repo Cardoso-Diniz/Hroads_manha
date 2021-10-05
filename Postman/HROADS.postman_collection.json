@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8863fa8b-9a6a-44d2-9de2-a523b225e01b",
+		"_postman_id": "728f7075-1387-47ce-94b9-6194059a7123",
 		"name": "HROADS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -800,7 +800,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"emai\":\"saulo@gmail.com\",\r\n    \"senha\":\"123456\"\r\n}",
+					"raw": "{\r\n    \"email\":\"saulo@gmail.com\",\r\n    \"senha\":\"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

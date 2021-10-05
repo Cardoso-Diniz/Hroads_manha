@@ -30,12 +30,17 @@ namespace senai_hroads_webAPI_manha.Controllers
             return Ok(_classeRepository.Listar());
         }
 
+
+
         [HttpGet("{idClasse}")]
         public IActionResult BuscarPorId(int idClasse)
         {
             return Ok(_classeRepository.BuscarPorId(idClasse));
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPost]
         public IActionResult Cadastrar(Classe novaClasse)
         {
@@ -44,6 +49,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode( 201 );
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPut("{idClasse}")]
         public IActionResult AtualizarIdUrl(int idClasse, Classe classeAtualizada)
         {
@@ -51,6 +59,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode( 204 );
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpDelete("{idClasse}")]
         public IActionResult Deletar(int idClasse)
         {

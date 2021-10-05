@@ -46,9 +46,23 @@ namespace senai_hroads_webAPI_manha.Repositories
             ctx.SaveChanges();
         }
 
-        public List<Habilidade> Listar()
+        public List<Habilidade> Listar(int id)
         {
-            return ctx.Habilidades.ToList();
+            return ctx.Habilidades
+                .Select(h => new Habilidade()
+                {
+                    IdHabilidade = h.IdHabilidade,
+                    NomeHabilidade = h.NomeHabilidade,
+
+                    IdTipoHabilidade = h.IdTipoHabilidade,
+
+                    IdTipoHabilidadeNavigation = new TipoHabilidade()
+                    {
+                        IdTipoHabilidade = h.IdTipoHabilidadeNavigation.IdTipoHabilidade,
+                        NomeTipoHabilidade = h.IdTipoHabilidadeNavigation.NomeTipoHabilidade
+                    }
+                })
+                .ToList();
         }
     }
 }

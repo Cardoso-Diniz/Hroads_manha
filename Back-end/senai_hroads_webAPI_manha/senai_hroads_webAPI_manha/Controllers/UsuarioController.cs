@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_hroads_webAPI_manha.Domains;
 using senai_hroads_webAPI_manha.Interfaces;
@@ -23,18 +24,26 @@ namespace senai_hroads_webAPI_manha.Controllers
             _UsuarioRepository = new UsuarioRepository();
         }
 
+        [Authorize(Roles = "2")]
         [HttpGet]
         public IActionResult Listar()
         {
             return Ok(_UsuarioRepository.Listar());
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpGet("{idUsuario}")]
         public IActionResult BuscarPorId(int idUsuario)
         {
             return Ok(_UsuarioRepository.BuscarPorId(idUsuario));
         }
 
+
+
+
+        [Authorize(Roles = "2")]
         [HttpPost]
         public IActionResult Cadastrar(Usuario novaUsuario)
         {
@@ -43,6 +52,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(201);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPut("{idUsuario}")]
         public IActionResult AtualizarIdUrl(int idUsuario, Usuario UsuarioAtualizada)
         {
@@ -50,6 +62,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(204);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpDelete("{idUsuario}")]
         public IActionResult Deletar(int idUsuario)
         {

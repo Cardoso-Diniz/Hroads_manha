@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai_hroads_webAPI_manha.Domains;
 using senai_hroads_webAPI_manha.Interfaces;
@@ -23,18 +24,25 @@ namespace senai_hroads_webAPI_manha.Controllers
             _TipoUsuarioRepository = new TipoUsuarioRepository();
         }
 
+        [Authorize(Roles = "2")]
         [HttpGet]
         public IActionResult Listar()
         {
             return Ok(_TipoUsuarioRepository.Listar());
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpGet("{idTipoUsuario}")]
         public IActionResult BuscarPorId(int idTipoUsuario)
         {
             return Ok(_TipoUsuarioRepository.BuscarPorId(idTipoUsuario));
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPost]
         public IActionResult Cadastrar(TipoUsuario novaTipoUsuario)
         {
@@ -43,6 +51,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(201);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpPut("{idTipoUsuario}")]
         public IActionResult AtualizarIdUrl(int idTipoUsuario, TipoUsuario TipoUsuarioAtualizada)
         {
@@ -50,6 +61,9 @@ namespace senai_hroads_webAPI_manha.Controllers
             return StatusCode(204);
         }
 
+
+
+        [Authorize(Roles = "2")]
         [HttpDelete("{idTipoUsuario}")]
         public IActionResult Deletar(int idTipoUsuario)
         {

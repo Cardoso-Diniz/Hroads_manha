@@ -8,7 +8,7 @@ namespace senai_hroads_webAPI_manha.Interfaces
 {
     interface IHabilidadeRepository
     {
-        List<Habilidade> Listar();
+        List<Habilidade> Listar(int id);
         Habilidade BuscarPorId(int idHabilidade);
         void AtualizarIdUrl(int idHabilidade, Habilidade HabilidadeAtualizada);
         void Cadastrar(Habilidade novaHabilidade);
